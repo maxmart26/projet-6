@@ -1,9 +1,25 @@
 
 import './App.css';
+import Header from './components/header/header';
+import Logements from './components/logement/logement';
+import Footer from './components/footer/footer';
+import { Routes ,Route } from 'react-router-dom';
+import Erreur from './components/erreur/erreur';
+import House from './components/house/house'
 
 function App() {
   return (
-    <h1>bonjour</h1>
+    <div>
+        <Header/>
+        <Routes>
+          <Route path='/' element={<Logements />}/>
+          <Route path='/*' element={<Erreur />}/>
+          <Route path='/house/:id' element={<House/>}/>
+
+        </Routes>
+        <Footer />
+     
+    </div>
     
   );
 }

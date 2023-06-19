@@ -1,0 +1,27 @@
+footer{
+    margin-top: 40px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.kasa{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.kasa img{
+    height: 50px;
+}
+.reserved{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.reserved img{
+    height: 20px;
+}

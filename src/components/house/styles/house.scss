@@ -1,0 +1,12 @@
+.carrousel{
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.carrousel img{
+    width: 200%;
+    max-height: 415px;
+    //object-fit: cover;
+}

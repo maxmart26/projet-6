@@ -1,0 +1,26 @@
+.erreur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 150px;
+}
+
+.erreur img {
+  max-width: 80%;
+}
+
+p {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 70px;
+}
+
+.link {
+  color: #FF6060;
+}
+
+/*# sourceMappingURL=erreur.css.map */
