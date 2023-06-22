@@ -10,7 +10,7 @@
   max-width: 80%;
 }
 
-p {
+.erreur p {
   font-size: 25px;
   display: flex;
   justify-content: center;
