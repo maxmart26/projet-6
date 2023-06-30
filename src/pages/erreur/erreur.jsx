@@ -1,7 +1,8 @@
 import React from "react";
-import image from './assets/404.png'
+import image from "../../datas/404.png"
 import {Link} from "react-router-dom"
-import "./styles/erreur.css"
+
+
 function Erreur(){
     return(
         <div className="erreur">
