@@ -28,5 +28,18 @@ footer {
 .reserved img {
   height: 20px;
 }
-
+.phrase_re{
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .phrase_re{
+    display: flex;
+  }
+}
+.phrase{
+  display: none;
+}
+.reserved img{
+  height: 40px;
+}
 /*# sourceMappingURL=footer.css.map */

@@ -14,7 +14,7 @@ function Home(){
                 alt ={"paysage du rivage avec la mere"} 
                 />
                 <div className="logement">
-                {datas && datas.slice(0, 6).map((data) => (
+                {datas && datas.map((data) => (
                 <LogementItem
                 id={data.id}
                 cover={data.cover}

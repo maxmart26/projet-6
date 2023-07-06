@@ -1,19 +1,22 @@
+import React, { useEffect } from 'react';
 import datas from "../../datas/datas.json"
-import {useParams} from 'react-router-dom'
+import {useParams , useNavigate} from 'react-router-dom'
 import ImageCarrousel from "../../components/carrousel/carrousel";
 import TagButton from "../../components/tag/tag";
 import EquipmentItem from "../../components/equipements/equipements";
 import "./logement.css"
 import Rate from "../../components/rate/rate";
+import Erreur from '../erreur/erreur';
 
 function Logement(){
     const {id} = useParams();
+    const navigate = useNavigate();
     
     for(let data of datas){    
         if(data.id == id){
         let selectedData = data
     return(
-        <div>
+        <div className='all'>
             <div className="house">
 
                         <ImageCarrousel data={selectedData} /> 
@@ -44,5 +47,7 @@ function Logement(){
             </div>
             
         
-    )}}}
+    )}
+}
+return<Erreur/>}
 export default Logement

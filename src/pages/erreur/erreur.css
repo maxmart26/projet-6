@@ -1,0 +1,35 @@
+.erreur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 200px;
+}
+
+.erreur p {
+  color: #FF6060;
+  font-size: 35px;
+  padding: 100px;
+}
+
+.link {
+  font-size: 20px;
+  color: #FF6060;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .erreur {
+    margin: 150px 20% 0 20%;
+  }
+  .erreur img {
+    width: 350px;
+  }
+  .erreur p {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0 150px 0;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=erreur.css.map */

@@ -26,6 +26,12 @@
     background-size: cover;
     
 }
+.image-counter{
+    color: #fff;
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+}
 .bouton {
     position: absolute;
     width: 40px;
@@ -49,6 +55,7 @@
     transform: rotate(270deg);
 }
 .tags{
+    color: #FF6060;
     display: flex;
     flex-direction: column;
 
@@ -161,4 +168,44 @@
 
 .rotate-180 {
     transform: rotate(180deg);
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px){
+    .all{
+        margin: 0 5% 0 5%;
+    }
+    .house{
+        margin: 0;
+    }
+    #proprio{
+        flex-direction: column;
+    }
+    #hosts{
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    #hosts p{
+        font-size: 20px;
+    }
+    #host{
+        align-items: center;
+    }
+    .descriptions{
+        flex-direction: column;
+    }
+    #description{
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    #equipement{
+        max-width: 100%;
+    }
+    .tags{
+        font-size: 25px;
+    }
+    .tags h2{
+        font-size: 20px;
+    }
+    .tags button{
+        max-width: 125px;
+    }
   }

@@ -1,0 +1,10 @@
+.info{
+    margin: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .collapse__dropdown__container {
+        max-width: 100%;
+        width: 85%;
+        margin: 50px 8% 30px 8%;
+    }
+}
