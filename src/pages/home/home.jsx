@@ -1,4 +1,4 @@
-import Baniere from "../../components/baniere/baniere"
+import Baniere from "../../components/banner/banner"
 import IMG from "../../datas/IMG.png"
 import "./home.css"
 import datas from "../../datas/datas.json"

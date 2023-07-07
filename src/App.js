@@ -1,9 +1,9 @@
 import './App.css';
 import { Routes ,Route } from 'react-router-dom';
-import Erreur from './pages/erreur/erreur';
-import Propos from './pages/a-propos/a-propos';
+import Erreur from './pages/error/error';
+import Propos from './pages/about/about';
 import Home from './pages/home/home';
-import Logement from './pages/logement/logement';
+import Logement from './pages/housing/housing';
 
 export default function App() {
   return (

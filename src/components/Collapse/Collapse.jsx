@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./propos.css";
+import "./Collapse.css";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);

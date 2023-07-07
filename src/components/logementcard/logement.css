@@ -21,6 +21,8 @@ figcaption{
     max-width: 1240px;
     margin: auto;
     position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .image-Banner{
     max-height: 200px;

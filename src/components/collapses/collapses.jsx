@@ -1,4 +1,5 @@
 import React from 'react';
+import "./collapses.css"
 
 const equipement = () =>{
   const equip = document.getElementById("equipment")
@@ -37,7 +38,7 @@ function EquipmentItem({data}){
                     <div id="equipement">
                         <button onClick={equipement}>équipements <i class="fa-solid fa-chevron-up equip"></i></button>
                         <div id="equipment" style={{display:'none'}}>
-                            {data.equipments && data.equipments.map((equipment) => (
+                        {data.equipments && data.equipments.map((equipment) => (
                             <p>{equipment}</p>
              ))}
           </div>

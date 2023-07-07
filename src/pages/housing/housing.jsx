@@ -3,10 +3,10 @@ import datas from "../../datas/datas.json"
 import {useParams , useNavigate} from 'react-router-dom'
 import ImageCarrousel from "../../components/carrousel/carrousel";
 import TagButton from "../../components/tag/tag";
-import EquipmentItem from "../../components/equipements/equipements";
-import "./logement.css"
+import EquipmentItem from "../../components/collapses/collapses";
+import "./housing.css"
 import Rate from "../../components/rate/rate";
-import Erreur from '../erreur/erreur';
+import Erreur from '../error/error';
 
 function Logement(){
     const {id} = useParams();
