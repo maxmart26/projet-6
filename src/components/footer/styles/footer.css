@@ -5,7 +5,9 @@ footer {
   flex-wrap: wrap;
   padding: 50px;
 }
-
+.phrase{
+  display: flex;
+}
 .kasa {
   display: flex;
   align-items: center;
@@ -35,11 +37,12 @@ footer {
   .phrase_re{
     display: flex;
   }
-}
+
 .phrase{
   display: none;
 }
 .reserved img{
   height: 40px;
+}
 }
 /*# sourceMappingURL=footer.css.map */

@@ -78,6 +78,7 @@
     display: flex;
 }
 #proprio{
+    margin: 0 100px 0 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -113,9 +114,10 @@
     margin-left: 5px;
 }
 .descriptions{
+    margin: 15px 100px 0 100px;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    
 }
 .descriptions p{
     background-color: #F6F6F6;
@@ -179,6 +181,7 @@
     }
     #proprio{
         flex-direction: column;
+        margin: 0;
     }
     #hosts{
         justify-content: space-between;
@@ -191,6 +194,7 @@
         align-items: center;
     }
     .descriptions{
+        margin: 0;
         flex-direction: column;
     }
     #description{

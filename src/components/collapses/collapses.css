@@ -1,3 +1,33 @@
-.equipment p {
-    padding: 5px;
-}
+.descriptions {
+    margin-bottom: 10px;
+  }
+  
+  #description button,
+  #equipement button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #description button:focus,
+  #equipement button:focus {
+    outline: none;
+  }
+  .fa-chevron-up {
+    transition: transform 0.8s;
+  }
+  .fa-chevron-up.open {
+    transform: rotate(-180deg);
+  }
+  #descriptions,
+  #equipment {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.3s ease;
+  }
+  
+  #descriptions.open,
+  #equipment.open {
+    max-height: 140px; /* Définissez une valeur suffisamment grande pour contenir votre contenu */
+  }

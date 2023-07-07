@@ -1,64 +1,69 @@
-.collapse__dropdown__title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FF6060;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: auto;
-    margin-bottom: 40px;
-    border-radius: 15px;
-    
+#equipements{
+  max-width: 90%;
+  width: 100%;
+  margin-bottom: 50px;
+  
 }
-.collapse__dropdown__title h2, .fa-solid{
-    font-size: 25px;
-    color: #fff;
+#equipements button{
+  padding: 15px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF6060;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.collapse__dropdown__container{
-    margin: auto;
-    width: 70%;
-    background-color: #F6F6F6;
-    border-radius: 15px;
-    transition: height 0.4s ease-in-out;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    
-}
-.collapse__dropdown__content{
-    color: #FF6060;
-    font-size: 22px;
-    
-   
-}
-.collapse__dropdown__content p{
-    padding: 0px 25px 25px 25px;
-    
+#equipements p{
+ color: #FF6060;
+ font-size: 20px;
+ margin: 0;
+ padding: 5px 0 2px 10px;
 }
 
-.collapse__dropdown__content {
-    max-height: 0;   
-    transition: max-height 0.3s ease;
+
+.collapse__dropdown__container{
+  max-width: 1440px;
+  width: 100%;
+}
+
+.collapse__dropdown__title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 1240px;
+}
+
+
+.descriptions {
+  margin-bottom: 10px;
+}
+#equipements button:focus {
+  outline: none;
+}
+.fa-chevron-up {
+  transition: transform 0.8s;
+}
+.fa-chevron-up.open {
+  transform: rotate(-180deg);
+}
+#equipments {
+  background-color: #F6F6F6;
+  border-radius: 0 0 20px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.3s ease;
+}
+
+#equipments.open {
+  max-height: 140px; /* Définissez une valeur suffisamment grande pour contenir votre contenu */
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+  #equipements{
+    max-width: 100%;
+    margin-bottom: 10px;
   }
-  
-  .collapse__dropdown__content.open {
-    max-height: 250px; /* ou une valeur appropriée pour votre contenu */
-    transition: all 2.0s ease;
-  }
-  
-  .collapse__dropdown__content.open p {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-  }
-  
-  .collapse__dropdown__content p {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .fa-chevron-up.rotate {
-    transform: rotate(-180deg);
-    transition: all 0.5s ease;
-  } 
-  .fa-chevron-up.rotate.open{
-    transform: rotate(-180deg);
-    transition: transform 10.3s ease;
-  }
+}
