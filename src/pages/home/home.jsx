@@ -1,6 +1,6 @@
 import Baniere from "../../components/banner/banner"
 import IMG from "../../datas/IMG.png"
-import "./home.css"
+import "../../style.css"
 import datas from "../../datas/datas.json"
 import { Link } from 'react-router-dom';
 import LogementItem from "../../components/logementcard/logement";

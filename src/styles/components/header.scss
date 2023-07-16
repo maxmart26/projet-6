@@ -1,9 +1,16 @@
+@import "../utiles/variable";
 header{
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    
+}
+header a{
+    color: $red-color;
+    text-decoration: none;
+    margin-left: 60px;
 }
 nav{
     display: flex;
@@ -14,9 +21,14 @@ nav{
 }
 nav Link{
     padding-left: 40px;
-    color: red;
+    color: $red-color;
     text-decoration: none;
 }
 nav a:hover{
     text-decoration: underline;
+}
+@media screen and (min-width: 320px) and (max-width: $mobile){
+    a{
+        font-size: 25px;
+    }
 }

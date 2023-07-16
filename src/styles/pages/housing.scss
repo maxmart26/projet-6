@@ -1,4 +1,16 @@
-
+#desc{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 70px 0 70px;
+}
+#desc li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    
+}
+#desc p{
+    margin: 5px;
+}
 .house{
     margin-left: 100px;
     margin-right: 100px;
@@ -27,7 +39,7 @@
     
 }
 .image-counter{
-    color: #fff;
+    color: $white-color;
     position: absolute;
     right: 50%;
     bottom: 10px;
@@ -41,7 +53,7 @@
     background-color: transparent;
 }
 .bouton i{
-    color: #fff;
+    color: $white-color;
     font-size: 50px;
 }
 #d {
@@ -55,7 +67,7 @@
     transform: rotate(270deg);
 }
 .tags{
-    color: #FF6060;
+    color: $red-color;
     display: flex;
     flex-direction: column;
 
@@ -64,8 +76,8 @@
     width: 100%;
     max-width: 115px;
     max-height: 40px;
-    color: #fff;
-    background-color: #FF6060;
+    color: $white-color;
+    background-color: $red-color;
     margin-right: 10px;
     padding: 10px;
     display: flex;
@@ -97,7 +109,7 @@
     justify-content: right;
     max-width: 70px;
     font-size: 18px;
-    color: #FF6060;
+    color: $red-color;
 }
 #host img{
     max-width: 64px;
@@ -120,15 +132,15 @@
     
 }
 .descriptions p{
-    background-color: #F6F6F6;
+    background-color: $grey-color;
 }
 #description{
     max-width: 47%;
     width: 100%;  
 }
 #description button{
-    background-color: #FF6060;
-    color: #fff;
+    background-color: $red-color;
+    color: $white-color;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -138,7 +150,7 @@
     border: none;
 }
 #description p{
-    color: #FF6060;
+    color: $red-color;
     font-size: 20px;
     margin: 0;
     padding: 20px;
@@ -153,14 +165,14 @@
     font-size: 22px;
     border-radius: 10px;
     border: none;
-    background-color: #FF6060;
-    color: #fff;
+    background-color: $red-color;
+    color: $white-color;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 #equipement p{
-   color: #FF6060;
+   color: $red-color;
    font-size: 20px;
    margin: 0;
    padding: 5px 0 2px 10px;
@@ -172,9 +184,19 @@
 .rotate-180 {
     transform: rotate(180deg);
   }
-  @media screen and (min-width: 320px) and (max-width: 767px){
+  @media screen and (min-width: 320px) and (max-width: $mobile){
     .all{
         margin: 0 5% 0 5%;
+    }
+    #desc {
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    #desc .collapse__dropdown__container{
+        width: 100%;
+        margin: 0 0 30px 0;
+
     }
     .house{
         margin: 0;

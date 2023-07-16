@@ -3,8 +3,8 @@ import datas from "../../datas/datas.json"
 import {useParams , useNavigate} from 'react-router-dom'
 import ImageCarrousel from "../../components/carrousel/carrousel";
 import TagButton from "../../components/tag/tag";
-import EquipmentItem from "../../components/collapses/collapses";
-import "./housing.css"
+import Collapse from "../../components/Collapse/Collapse";
+import "../../style.css"
 import Rate from "../../components/rate/rate";
 import Erreur from '../error/error';
 
@@ -15,6 +15,9 @@ function Logement(){
     for(let data of datas){    
         if(data.id == id){
         let selectedData = data
+        const Equipement = data.equipments.map((equipments,index) => {
+            return <li key={index}>{equipments}</li>
+        })
     return(
         <div className='all'>
             <div className="house">
@@ -41,8 +44,15 @@ function Logement(){
                     </div>
                     </div>
                 </section>
-                <section >
-                  <EquipmentItem data={data}/>
+                <section id='desc' >
+                  <Collapse 
+                  title={"Description"}
+                  content={data.description}
+                  />
+                  <Collapse
+                  title={"Equipements"}
+                  content={Equipement}
+                  />
                 </section>
             </div>
             

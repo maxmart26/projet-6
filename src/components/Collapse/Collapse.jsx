@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Collapse.css";
+import "../../style.css"
 
 const Collapse = ({ title, content }) => {
   const [equipmentVisible, setEquipmentVisible] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./logement.css"
+import "../../style.css"
 const LogementItem = ({ id, cover, title }) => {
   return (
     <Link to={`/house/${id}`} className="box" key={id}>

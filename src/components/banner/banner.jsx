@@ -1,4 +1,4 @@
-import "./banner.css"
+import "../../style.css"
 
 function Baniere({photo,alt,titre}){
     return(

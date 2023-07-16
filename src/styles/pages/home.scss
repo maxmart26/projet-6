@@ -1,16 +1,16 @@
 .logement{
     margin-left: 100px;
     margin-right: 100px;
-    background-color: #F6F6F6;
+    background-color: $grey-color;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
     border-radius: 10px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: $mobile){
     .logement{
         margin: auto;
-        background-color: #fff;
+        background-color: $white-color;
     }
 }
