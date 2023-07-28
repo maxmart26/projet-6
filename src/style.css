@@ -374,12 +374,14 @@ figcaption {
 }
 
 #d {
+  cursor: pointer;
   color: grey;
   right: 0;
   transform: rotate(90deg);
 }
 
 #g {
+  cursor: pointer;
   color: grey;
   left: 0;
   transform: rotate(270deg);
