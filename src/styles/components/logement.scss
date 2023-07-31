@@ -48,10 +48,14 @@ figcaption{
 }
 @media screen and (min-width: 320px) and (max-width: $mobile){
     .box {
-        width: 100%;
+        width: 400px;
+        figure{
+            margin: 0;
+        }
     }
     .box img{
         width: 100%;
+        
     }
     .banner{
         margin: 50px 8% 30px 8%;

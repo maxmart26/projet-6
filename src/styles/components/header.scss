@@ -7,10 +7,15 @@ header{
     justify-content: space-between;
     
 }
+///faire en sorte que le lien soit souligné quand on est sur la page
+
+
 header a{
     color: $red-color;
     text-decoration: none;
     margin-left: 60px;
+    &.active {
+        text-decoration: underline;}
 }
 nav{
     display: flex;
@@ -28,7 +33,19 @@ nav a:hover{
     text-decoration: underline;
 }
 @media screen and (min-width: 320px) and (max-width: $mobile){
-    a{
-        font-size: 25px;
+    header{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
     }
+    img{
+        width:100px;
+        
+    }
+    a{
+        font-size: 15px;
+    }
+    
 }

@@ -146,9 +146,14 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .phrase_re {
     display: flex;
+    max-width: 100px;
   }
   .phrase {
     display: none;
+  }
+  .kasa img {
+    max-width: 100px;
+    height: 40px;
   }
 }
 /*Color*/
@@ -165,6 +170,9 @@ header a {
   color: #FF6060;
   text-decoration: none;
   margin-left: 60px;
+}
+header a.active {
+  text-decoration: underline;
 }
 
 nav {
@@ -185,8 +193,18 @@ nav a:hover {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    width: 100px;
+  }
   a {
-    font-size: 25px;
+    font-size: 15px;
   }
 }
 /*Color*/
@@ -245,7 +263,10 @@ figcaption {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .box {
-    width: 100%;
+    width: 400px;
+  }
+  .box figure {
+    margin: 0;
   }
   .box img {
     width: 100%;
