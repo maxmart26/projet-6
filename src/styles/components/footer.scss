@@ -6,6 +6,9 @@ footer{
     flex-wrap: wrap;
     padding: 50px;
 }
+.phrase_re{
+    display: none;
+  }
 .kasa{
     
     display: flex;
@@ -25,4 +28,12 @@ footer{
 }
 .reserved img{
     height: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: $mobile){
+    .phrase_re{
+        display: flex;
+      }
+    .phrase{
+        display: none;
+    }
 }
